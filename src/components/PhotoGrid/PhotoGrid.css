@@ -1,0 +1,6 @@
+.photoGridContainer {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -4px; /* Adjustment for the gutter */
+    width: 100%;
+}

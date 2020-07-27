@@ -1,0 +1,53 @@
+.photoCardContainer {
+    border-radius: 5px;
+    flex: auto;
+    height: 250px;
+    margin: 0 0 8px 8px;
+    min-width: 150px;
+    position: relative;
+}
+
+.photoCardContainer:nth-child(4n+1) {
+    width: 250px;
+}
+.photoCardContainer:nth-child(4n+1):nth-child(4n+2) {
+    width: 325px;
+}
+.photoCardContainer:nth-child(4n+1):nth-child(4n+3) {
+    width: 180px;
+}
+.photoCardContainer:nth-child(4n+1):nth-child(4n+4) {
+    width: 380px;
+}
+
+.photoCardContainer img {
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.photoCardContainer .hoverMeta {
+    background-image: linear-gradient(#ffffff00, #297d7dee);
+    display: flex;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: visibility 0.5s, opacity 0.5s;
+    visibility: hidden;
+    width: 100%;
+}
+
+.hoverMeta p{
+    align-self: flex-end;
+    color: white;
+    line-height: 1em;
+    padding: 20px;
+}
+
+.photoCardContainer:hover .hoverMeta {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,39 @@
+.formWrapper {
+    background-color: #297d7d;
+    margin-bottom: 8px;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1, p {
+    color: white;
+    line-height: 0;
+    padding: 10px;
+}
+
+.faImage {
+    color: white;
+    font-size: 48px;
+}
+
+input, button {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 16px;
+    height: 20px;
+    padding: 10px;
+}
+
+button {
+    border-radius: 0 5px 5px 0;
+    color: #297D7D;
+    height: 40px;
+    transition: background-color 0.5s;
+    width: 40px;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
